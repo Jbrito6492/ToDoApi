@@ -25,6 +25,12 @@
     <_ContentIncludedByDefault Remove="Views\TodoScaffold\Details.cshtml" />
     <_ContentIncludedByDefault Remove="Views\TodoScaffold\Edit.cshtml" />
     <_ContentIncludedByDefault Remove="Views\TodoScaffold\Index.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Shared\_ValidationScriptsPartial.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Todo\Create.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Todo\Delete.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Todo\Details.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Todo\Edit.cshtml" />
+    <_ContentIncludedByDefault Remove="Views\Todo\Index.cshtml" />
   </ItemGroup>
 
   <ItemGroup>
