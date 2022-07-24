@@ -14,7 +14,7 @@ namespace TodoApi.Controllers
     {
         private static List<Todo> _todos = new List<Todo>
         {
-            new Todo { Id = 1, Name = "Todo 1", IsComplete = false }
+            new Todo { Id = 0, Name = "Todo 1", IsComplete = false }
         };
 
         // GET: api/Todo
@@ -28,7 +28,10 @@ namespace TodoApi.Controllers
         [HttpGet("{id}", Name = "Get")]
         public async Task<ActionResult<Todo>> Get(int id)
         {
-            return _todos.FirstOrDefault(t => t.Id == id);
+            var todo = _todos.Find(t => t.Id == id);
+            if (todo == null)
+                return NotFound();
+            return Ok(todo);
         }
 
         // POST: api/Todo
