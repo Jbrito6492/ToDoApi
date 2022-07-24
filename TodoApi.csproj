@@ -28,7 +28,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="TodoApi.Controllers" />
+    <Folder Include="Controllers" />
   </ItemGroup>
 
 </Project>
